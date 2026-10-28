@@ -26,4 +26,4 @@ jobs:
         run: docker build --build-arg APP_VERSION=ci -t ${{ env.IMAGE }}:ci .
 
       - name: Tests dans le conteneur
-        run: docker run --rm ${{ env.IMAGE }}:ci python -m unittest -v
+        run: docker run --rm ${{ env.IMAGE }}:ci python -m unittest -v 
