@@ -63,7 +63,7 @@ jobs:
             echo "- $s : $n" >> "$GITHUB_STEP_SUMMARY"
           done
 
-      - name: Publier les rapports
+      - name: Publier les rapports 
         if: always()
         uses: actions/upload-artifact@v4
         with:
